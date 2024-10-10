@@ -80,7 +80,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">256</span>
+            <span class="post-count">496</span>
         </span>
     </span>
 
@@ -105,13 +105,26 @@
     <div class="article-entry" itemprop="articleBody">
        
   <p>首先非常感谢我的学长，21级硕士李，教我怎么快速挖洞。</p>
-<p>挖洞目标——wordpress插件<br>挖洞工具——xray</p>
-<p>首先了解一下<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/366551738">wordress</a>（该链接里内容较多，请斟酌查看），<img src="/_images/wpIntro.png" alt="wordpress介绍"></p>
-<h4 id="1-环境搭建"><a href="#1-环境搭建" class="headerlink" title="1.环境搭建"></a>1.环境搭建</h4><h5 id="1-1申请服务器"><a href="#1-1申请服务器" class="headerlink" title="1.1申请服务器"></a>1.1申请服务器</h5><p>阿里云购买服务器：有学生优惠，可以白嫖一个月</p>
-<h5 id="1-2搭建wordpress环境"><a href="#1-2搭建wordpress环境" class="headerlink" title="1.2搭建wordpress环境"></a>1.2搭建wordpress环境</h5><p>使用宝塔面板，<img src="https://blog.csdn.net/aliyunguide/article/details/86664703" alt="阿里云+宝塔面板：wordpress搭建教程">，注意，因为是为了测试插件，并不正式上线，所以不需要备案和申请域名。</p>
-<h4 id="2-挖洞"><a href="#2-挖洞" class="headerlink" title="2.挖洞"></a>2.挖洞</h4><h5 id="2-1插件选择"><a href="#2-1插件选择" class="headerlink" title="2.1插件选择"></a>2.1插件选择</h5><p>下载人数少：一般插件体量小，使用人数少则漏洞不易被发现<br>更新时间靠前：插件适用当前wordpress版本</p>
-<h5 id="2-2插件扫描"><a href="#2-2插件扫描" class="headerlink" title="2.2插件扫描"></a>2.2插件扫描</h5><p>使用xray进行扫描，浏览器使用插件SwitchyOmega进行代理，开启插件，点击插件按钮或者尝试输入，主要是运行插件。同时查看xray运行界面是否警告漏洞。</p>
-<h4 id="3-漏洞提交"><a href="#3-漏洞提交" class="headerlink" title="3.漏洞提交"></a>3.漏洞提交</h4><p>提交到wordfence上，等待时间不确定</p>
+<ul>
+<li>挖洞目标——wordpress插件</li>
+<li>挖洞工具——xray</li>
+</ul>
+<p>首先了解一下<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/366551738">WordPress新手指南</a>（该链接里内容较多，请斟酌查看）<br>以下是省流版：上述链接里的wordpress介绍：<img src="/images/wpIntro.png" alt="wordpress介绍"></p>
+<h4 id="1-环境搭建"><a href="#1-环境搭建" class="headerlink" title="1.环境搭建"></a>1.环境搭建</h4><h5 id="1-1申请服务器"><a href="#1-1申请服务器" class="headerlink" title="1.1申请服务器"></a>1.1申请服务器</h5><p>阿里云购买服务器：有学生优惠，可以白嫖一个月.教程：<a target="_blank" rel="noopener" href="https://blog.csdn.net/IronmanJay/article/details/108204431#57_WordPress_335">阿里云服务器购买（建议只看里面的购买阿里云服务器）</a>。<br>注意，因为是为了测试插件，并不正式上线，所以不需要备案和申请域名。</p>
+<h5 id="1-2搭建wordpress环境"><a href="#1-2搭建wordpress环境" class="headerlink" title="1.2搭建wordpress环境"></a>1.2搭建wordpress环境</h5><p>搭建过程使用宝塔面板，基本参考该教程：<a target="_blank" rel="noopener" href="https://blog.csdn.net/aliyunguide/article/details/86664703">宝塔面板：wordpress搭建教程</a>。</p>
+<h4 id="2-挖洞"><a href="#2-挖洞" class="headerlink" title="2.挖洞"></a>2.挖洞</h4><h5 id="2-1插件选择"><a href="#2-1插件选择" class="headerlink" title="2.1插件选择"></a>2.1插件选择</h5><ul>
+<li>下载人数少：插件体量小，使用人数少则漏洞不易被发现。建议选择几十人到一两百人下载量的小插件</li>
+<li>更新时间靠前：插件适用当前wordpress版本。建议最近更新尽量一年内。</li>
+<li>拥有插件窗口：插件会在菜单表格生成对应的插件目录项，这样便于进行输入测试。</li>
+<li>选择功能熟悉：不是必须项，只是觉得这样好理解插件功能。</li>
+</ul>
+<h5 id="2-2插件扫描"><a href="#2-2插件扫描" class="headerlink" title="2.2插件扫描"></a>2.2插件扫描</h5><p>使用xray进行扫描，浏览器使用插件SwitchyOmega进行代理，开启插件，点击插件按钮或者尝试输入，主要是运行插件。同时查看xray运行界面是否警告漏洞。<br>使用xray扫描教程：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/pandana/p/15719142.html">Xray扫描器的简单使用</a></p>
+<h4 id="3-漏洞提交"><a href="#3-漏洞提交" class="headerlink" title="3.漏洞提交"></a>3.漏洞提交</h4><p>提交到wordfence上，提交网址为：<a target="_blank" rel="noopener" href="https://www.wordfence.com/threat-intel/vulnerabilities/submit">wordfence：wp漏洞提交网址</a>，等待时间不确定，我是等了将近两个月才收到邮件。</p>
+<p>该教程主要参考引用的博客如下：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/IronmanJay/article/details/108204431#57_WordPress_335">阿里云服务器购买（建议只看里面的购买阿里云服务器）</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/aliyunguide/article/details/86664703">使用宝塔面板搭建网站</a></li>
+</ul>
  
       <!-- reward -->
       
